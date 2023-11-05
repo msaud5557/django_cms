@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Homepage</h1>
+    <ul>
+        {% for articles in articles %}
+            <li>
+                <a href="{% url 'articles_detail' articles.id %}">{{ articles.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
