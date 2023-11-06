@@ -25,7 +25,9 @@ urlpatterns = [
     path('category/',views.CategoryListView.as_view(),name='category'),
     path('articles_detail/<int:pk>',views.ArticlesDetailView.as_view(),name='articles_detail'),
     path('articles_list/',views.ArticlesListView.as_view(),name='articles_list'),
-    path('home/',views.homepage,name="homepage"),
+    # path('home/',views.homepage,name="homepage"),
+    # path('index/',views.indexpage,name="indexpage"),
+    # path('category_detail/<int:pk>',views.category_detail)
     
     
     

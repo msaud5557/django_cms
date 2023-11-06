@@ -13,10 +13,28 @@ class ArticlesDetailView(DetailView):
 class ArticlesListView(ListView):
     model=Articles
     
-def homepage(request):
-    articles = Articles.objects.all()
-    return render(request, 'content/home.html', {'articles': articles})   
+# def homepage(request):
+#     articles = Articles.objects.all()
+#     return render(request, 'content/home.html', {'articles': articles})   
 
+# def indexpage(request):
+#     category = Category.objects.all()
+#     article=category.Articles.all()
+#     return render(request, 'content/index.html', {'category': category})  
+
+
+    
+# def category_detail(request, category_id):
+#     category = Category.objects.get(id=category_id)
+#     articles = category.Articles.all()
+
+#     context = {
+#         'category': category,
+#         'articles': articles,
+#     }
+
+#     return render(request, 'category_detail.html', context)
+    
 
 
 
